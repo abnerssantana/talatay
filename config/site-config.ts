@@ -119,8 +119,8 @@ const GridItems: GridItemInterface[] = [
     description:
       "Acompanhe meu trabalho no Instagram para ver mais projetos e atualizações.",
     buttonTitle: "Seguidores",
-    buttonLink: "https://www.instagram.com/maurobrumato/?img_index=7",
-    buttonSecondaryText: "352",
+    buttonLink: "https://www.instagram.com/usetalatay/",
+    buttonSecondaryText: "909",
     color: "rgba(104, 60, 190, 1)",
     backgroundColor: {
       light: "#f7e3fc",

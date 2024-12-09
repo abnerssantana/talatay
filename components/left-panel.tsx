@@ -1,5 +1,6 @@
 "use client";
 import { siteConfig } from "@/config/site-config";
+import { Mail, MapPin } from "lucide-react";
 import Image from "next/image";
 import Footer from "./footer";
 
@@ -26,7 +27,7 @@ const LeftPanel = () => {
         </div>
         {/* Text Container */}
         <div className="my-6">
-          <div className="text-base font-medium text-primary">
+          <div className="text-base font-medium text-primary dark:text-[#EDE0D4]">
             {siteConfig.title}
           </div>
           <h1 className="mt-2 text-4xl font-bold">{siteConfig.creator}</h1>
