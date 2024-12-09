@@ -30,7 +30,7 @@ const LeftPanel = () => {
             {siteConfig.title}
           </div>
           <h1 className="mt-2 text-4xl font-bold">{siteConfig.creator}</h1>
-          <p className="text-2xl font-light text-neutral-500">
+          <p className="text-2xl font-light text-neutral-50">
             {siteConfig.bio}
           </p>
         </div>
