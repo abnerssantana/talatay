@@ -1,4 +1,4 @@
-export type GridItemLayout = "1x2" | "2x1" | "2x2" | "2x4" | "2x7";
+export type GridItemLayout = "1x2" | "1x6" | "2x1" | "2x2" | "2x4" | "2x7";
 export type GridItemType = "social" | "equipment" | "mentor" | "project";
 export type EqiupmentItem = {
   title: string;
@@ -40,11 +40,21 @@ const GridItems: GridItemInterface[] = [
     icon: "whatsapp",
     description:
       "Quer conhecer nossas lindas semijoias? Entre em contato!",
-    color: "#128c7e",
+    color: "#25d366",
     buttonTitle: "17 991904-8732",
     buttonLink:
       "https://api.whatsapp.com/send?phone=5517991904873&text=Oii,%20gostaria%20de%20saber%20mais%20sobre%20as%20semijoias.",
     buttonSecondaryText: "",
+  },
+  {
+    layout: "1x6",
+    type: "equipment",
+    title: "Nossa nova coleção está cheia de braceletes e anéis incríveis, pensados para complementar o seu estilo com muita elegância e modernidade.",
+    image: "2.jpg",
+    backgroundColor: {
+      light: "#f0f0f0",
+      dark: "#1a1a1a"
+    },
   },
   {
     layout: "2x7",
@@ -196,16 +206,6 @@ const GridItems: GridItemInterface[] = [
     type: "equipment",
     title: "Montagem de móveis: Rack para TV.",
     images: [ "casa2-7.jpeg", "casa2-9.jpeg"],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
-  },
-  {
-    layout: "2x4",
-    type: "equipment",
-    title: "Pintura em portão com tinta automotiva acrílica indicada para ferragens.",
-    image: "portao-marron.jpeg",
     backgroundColor: {
       light: "#f0f0f0",
       dark: "#1a1a1a"

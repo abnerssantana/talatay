@@ -11,6 +11,7 @@ const variants = cva(
     variants: {
       size: {
         "1x2": "md:col-span-1 col-span-2 row-span-2 md:p-8 p-4",
+        "1x6": "md:col-span-1 col-span-2 row-span-6 md:p-8 p-4", // New 1x6 variant
         "2x1": "md:col-span-2 col-span-full row-span-1 py-4 md:px-8 px-4",
         "2x2": "md:col-span-2 col-span-full row-span-2 md:p-8 p-4",
         "2x4": "md:col-span-2 col-span-full row-span-4 relative overflow-hidden",
@@ -46,7 +47,7 @@ const GridItem = ({ size, children, backgroundColor }: GridItemProps) => {
     return null;
   }
 
-  const bgColor = backgroundColor 
+  const bgColor = backgroundColor
     ? (isDark ? backgroundColor.dark : backgroundColor.light)
     : (isDark ? "rgb(17, 17, 19)" : "rgb(247, 247, 248)");
 
@@ -57,7 +58,7 @@ const GridItem = ({ size, children, backgroundColor }: GridItemProps) => {
         "border-border-light dark:border-border-dark hover:scale-[1.02] hover:shadow-lg",
         isDark ? "hover:bg-surface-dark/80" : "hover:bg-surface-light/80"
       )}
-      style={{ 
+      style={{
         backgroundColor: bgColor,
       }}
     >
