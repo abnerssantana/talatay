@@ -34,16 +34,16 @@ const GridItems: GridItemInterface[] = [
     type: "social",
     title: "WhatsApp",
     backgroundColor: {
-      light: "#7bf1a8",
-      dark: "#386641"  
+      light: "#dcf8c6",
+      dark: "#075e54"  
     },
     icon: "whatsapp",
     description:
-      "Para mais informações e agendamento de orçamentos, entre em contato.",
+      "Quer conhecer nossas lindas semijoias? Entre em contato!",
     color: "#128c7e",
-    buttonTitle: "17 99213-7832",
+    buttonTitle: "17 991904-8732",
     buttonLink:
-      "https://api.whatsapp.com/send/?phone=5517992137832&text&type=phone_number&app_absent=0",
+      "https://api.whatsapp.com/send?phone=5517991904873&text=Oii,%20gostaria%20de%20saber%20mais%20sobre%20as%20semijoias.",
     buttonSecondaryText: "",
   },
   {
