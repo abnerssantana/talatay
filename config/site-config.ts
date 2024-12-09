@@ -100,7 +100,7 @@ const GridItems: GridItemInterface[] = [
       image: "3.jpg",
   },
   {
-    layout: "2x",
+    layout: "2x4",
     type: "equipment",
     title:
       "Um dos mix mais bonitos que eu já montei aqui.🥰",
