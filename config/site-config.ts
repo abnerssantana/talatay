@@ -57,10 +57,10 @@ const GridItems: GridItemInterface[] = [
     },
   },
   {
-    layout: "2x7",
+    layout: "1x6",
     type: "equipment",
-    title: "Pintura interior em latex acrílico & restauração de grade com tinta esmalte.",
-    video: "/joao.mp4",
+    title: " Explore nossas semijoias e encontre seu novo favorito!",
+    video: "/1.mp4",
   },
   {
     layout: "2x1",
