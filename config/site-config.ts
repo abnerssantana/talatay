@@ -214,9 +214,9 @@ const GridItems: GridItemInterface[] = [
 ];
 
 export const siteConfig = {
-  creator: "Mauro Brumato",
-  title: "Pintura Residencial & Pequenos Reparos",
-  bio: "Serviços de pintura residencial, reparos elétricos e hidráulicos eficientes para garantir que sua casa esteja sempre impecável.",
+  creator: "TALATAY",
+  title: "Semijoias",
+  bio: "Evidencie a sua elegância com nossas semijoias ✨",
   location: "São José Rio Preto - SP",
   locationLink:
     "https://www.google.com/maps/place/São+José+do+Rio+Preto+-+SP/data=!4m2!3m1!1s0x94bc52ce6910005f:0xb39d5c0e3b8c5675?sa=X&ved=1t:242&ictx=111",

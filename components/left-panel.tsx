@@ -21,6 +21,7 @@ const LeftPanel = () => {
             width={125}
             height={125}
             blurDataURL="/avatar.jpg"
+            className="rounded-full"
           />
         </div>
         {/* Text Container */}

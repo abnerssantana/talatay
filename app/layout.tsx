@@ -40,8 +40,8 @@ const sfPRO = localFont({
 });
 
 const siteUrl = "https://maurobrumato.com.br";
-const description = "Serviços de pintura, reparos elétricos e hidráulicos eficientes para garantir que sua casa esteja sempre impecável.";
-const title = "Pintura Residencial & Pequenos Reparos - Mauro Brumato";
+const description = "Evidencie a sua elegância com nossas semijoias ✨";
+const title = "TALATAY - Semijoias";
 
 export const metadata: Metadata = {
   title,
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: '/shared.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mauro Brumato - Pintura e Reparos',
+        alt: 'TALATAY | Semijoias',
       },
     ],
     locale: 'pt_BR',
