@@ -35,11 +35,10 @@ const GridItems: GridItemInterface[] = [
     title: "WhatsApp",
     backgroundColor: {
       light: "#dcf8c6",
-      dark: "#075e54"  
+      dark: "#075e54",
     },
     icon: "whatsapp",
-    description:
-      "Quer conhecer nossas lindas semijoias? Entre em contato!",
+    description: "Quer conhecer nossas lindas semijoias? Entre em contato!",
     color: "#25d366",
     buttonTitle: "17 991904-8732",
     buttonLink:
@@ -49,12 +48,9 @@ const GridItems: GridItemInterface[] = [
   {
     layout: "1x6",
     type: "equipment",
-    title: "Nossa nova coleção está cheia de braceletes e anéis incríveis, pensados para complementar o seu estilo com muita elegância e modernidade.",
+    title:
+      "Nossa nova coleção está cheia de braceletes e anéis incríveis, pensados para complementar o seu estilo com muita elegância e modernidade.",
     image: "2.jpg",
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
   },
   {
     layout: "1x6",
@@ -70,7 +66,7 @@ const GridItems: GridItemInterface[] = [
     color: "#090707",
     backgroundColor: {
       light: "#e6f3ff",
-      dark: "#0d2847"
+      dark: "#0d2847",
     },
   },
   {
@@ -114,10 +110,6 @@ const GridItems: GridItemInterface[] = [
     title:
       "A lixadeira de parede agiliza o processo de lixamento e garante uma superfície mais uniforme. Pode ser utilizada em diferentes superfícies, como drywall, alvenaria, gesso e massa corrida em paredes e tetos.",
     video: "/mauro.mp4",
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
   },
   {
     layout: "2x2",
@@ -132,7 +124,7 @@ const GridItems: GridItemInterface[] = [
     color: "rgba(104, 60, 190, 1)",
     backgroundColor: {
       light: "#f7e3fc",
-      dark: "#2e1437"
+      dark: "#2e1437",
     },
   },
   {
@@ -140,15 +132,7 @@ const GridItems: GridItemInterface[] = [
     type: "equipment",
     title:
       "Substituição de papel de parede e pintura interior em latex acrílico.",
-    images: [
-      "pintura1.jpeg",
-      "pintura3.jpeg",
-      "pintura4.jpeg",
-    ],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
+    images: ["pintura1.jpeg", "pintura3.jpeg", "pintura4.jpeg"],
   },
   {
     layout: "2x4",
@@ -156,60 +140,39 @@ const GridItems: GridItemInterface[] = [
     title:
       "Pintura em grade realizada com rolos e pincéis com tinta esmalte sintético a base d'água & calçada restaurada com tinta indicada para áreas externas.",
     images: ["portao-verde1.jpeg", "portao-verde2.jpeg"],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
   },
   {
     layout: "2x4",
     type: "equipment",
-    title: "Pintura em portão com tinta automotiva acrílica indicada para ferragens & calçada restaurada com tinta específica para áreas externas.",
+    title:
+      "Pintura em portão com tinta automotiva acrílica indicada para ferragens & calçada restaurada com tinta específica para áreas externas.",
     images: ["portao1.jpeg", "portao2.jpeg"],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
   },
   {
     layout: "2x7",
     type: "equipment",
-    title: "Pintura interior em latex acrílico & piso restaurado com tinta específica para áreas externas.",
+    title:
+      "Pintura interior em latex acrílico & piso restaurado com tinta específica para áreas externas.",
     video: "/celisa.mp4",
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
   },
   {
     layout: "2x4",
     type: "equipment",
-    title: "Pintura em portão e janelas com tinta automotiva acrílica indicada para ferragens.",
+    title:
+      "Pintura em portão e janelas com tinta automotiva acrílica indicada para ferragens.",
     images: ["casa2-1.jpeg", "casa2-2.jpeg", "casa2-3.jpeg", "casa2-8.jpeg"],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
   },
   {
     layout: "2x4",
     type: "equipment",
     title: "Pintura interior em látex acrílico.",
-    images: [ "casa2-4.jpeg", "casa2-5.jpeg", "casa2-6.jpeg"],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
+    images: ["casa2-4.jpeg", "casa2-5.jpeg", "casa2-6.jpeg"],
   },
   {
     layout: "2x4",
     type: "equipment",
     title: "Montagem de móveis: Rack para TV.",
-    images: [ "casa2-7.jpeg", "casa2-9.jpeg"],
-    backgroundColor: {
-      light: "#f0f0f0",
-      dark: "#1a1a1a"
-    },
+    images: ["casa2-7.jpeg", "casa2-9.jpeg"],
   },
 ];
 
