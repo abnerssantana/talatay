@@ -39,7 +39,7 @@ const sfPRO = localFont({
   variable: "--font-sfpro",
 });
 
-const siteUrl = "https://maurobrumato.com.br";
+const siteUrl = "talatay.vercel.app";
 const description = "Evidencie a sua elegância com nossas semijoias ✨";
 const title = "TALATAY - Semijoias";
 
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/shared.jpg'],
+    images: ['/shared.png'],
   },
 };
 
