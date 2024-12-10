@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/shared.jpg',
+        url: '/shared.png',
         width: 1200,
         height: 630,
         alt: 'TALATAY | Semijoias',
