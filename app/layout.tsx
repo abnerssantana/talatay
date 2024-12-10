@@ -39,7 +39,7 @@ const sfPRO = localFont({
   variable: "--font-sfpro",
 });
 
-const siteUrl = "talatay.vercel.app";
+const siteUrl = "https://talatay.vercel.app";
 const description = "Evidencie a sua elegância com nossas semijoias ✨";
 const title = "TALATAY - Semijoias";
 
