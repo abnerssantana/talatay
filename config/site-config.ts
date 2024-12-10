@@ -62,6 +62,7 @@ const GridItems: GridItemInterface[] = [
     layout: "2x1",
     type: "project",
     title: "Joias em Prata 925",
+    description: "Encante-se com a beleza atemporal das nossas joias de prata 925, perfeitas para adicionar um toque de elegância ao seu dia a dia.",
     icon: "gem",
     color: "#090707",
     backgroundColor: {
