@@ -1,11 +1,12 @@
 import { GridItemInterface } from "@/config/site-config";
-import { Ruler, Plug, Drill, Paintbrush, Wrench, ShowerHead, LampCeiling, LucideIcon } from "lucide-react"; // Importe os ícones necessários
+import { Ruler, Plug, Drill, Paintbrush, Wrench, ShowerHead, LampCeiling, LucideIcon, Gem } from "lucide-react"; // Importe os ícones necessários
 
 const iconMap: { [key: string]: LucideIcon } = {
   plug: Plug,
   drill: Drill,
   ruler: Ruler,
   paintbrush: Paintbrush,
+  gem: Gem,
   wrench: Wrench,
   showerhead: ShowerHead,
   lampceiling: LampCeiling,
