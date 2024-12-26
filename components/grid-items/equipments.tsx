@@ -32,7 +32,7 @@ const ImageComparison: React.FC<Props> = ({ item }) => {
   // Helper function to determine container height based on layout
   const getContainerHeight = () => {
     switch (item.layout) {
-      case '2x7':
+      case '2x8':
         return 'h-[620px]';
       case '2x4':
         return 'h-[400px]';

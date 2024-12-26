@@ -99,7 +99,7 @@ const JewelryCatalog = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="bg-white dark:bg-neutral-900 rounded-xl overflow-hidden hover:scale-[1.02] transition-transform">
+          <div key={product.id} className="backdrop-blur-sm bg-white/60 dark:bg-neutral-950/60 rounded-xl overflow-hidden hover:scale-[1.02] transition-transform">
             <Link href={`/produto/${product.id}`}>
               <div className="relative aspect-square">
                 <Image
