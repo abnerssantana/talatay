@@ -9,19 +9,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "rgb(187 128 88)",
+        primary: "#6C3D29", // Marrom principal
         background: {
-          light: "#EDE0D4",
-          dark: "#B08968",
+          light: "#F5F5F5",
+          dark: "#2D2D2D",
         },
         surface: {
-          light: "#f7f7f8",
-          dark: "#111113",
+          light: "#BB7F56", // Bege médio
+          dark: "#4A2B1B",  // Marrom escuro
         },
         border: {
-          light: "#E6CCB2",
-          dark: "#9C6644",
+          light: "#C99A5B", // Dourado claro
+          dark: "#3A2318",  // Marrom escuro
         },
+        accent: {
+          primary: "#6C3D29",   // Marrom principal
+          secondary: "#BB7F56",  // Bege médio
+          tertiary: "#C99A5B",   // Dourado
+        }
       },
       fontFamily: {
         sans: ["var(--font-sfpro)"],

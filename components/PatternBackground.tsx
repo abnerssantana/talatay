@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Gem, Crown, Sparkles, Heart } from 'lucide-react';
 import { useTheme } from "next-themes";
@@ -34,7 +35,7 @@ const PatternBackground = () => {
                 >
                   <Icon
                     size={16}
-                    className={isDark ? "text-neutral-500" : "text-neutral-400"}
+                    className={isDark ? "text-[#C4914D]" : "text-[#C99A5B]"}
                   />
                 </g>
               ))}

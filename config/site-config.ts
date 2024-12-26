@@ -50,7 +50,7 @@ const GridItems: GridItemInterface[] = [
     type: "equipment",
     title:
       "Nossa nova coleção está cheia de braceletes e anéis incríveis.",
-    image: "2.jpg",
+    image: "/2.jpg",
   },
   {
     layout: "1x6",
@@ -90,21 +90,21 @@ const GridItems: GridItemInterface[] = [
     type: "equipment",
     title:
       "Corações que encantam e completam qualquer look ❤️✨",
-      image: "1.jpg",
+      image: "/1.jpg",
   },
   {
     layout: "2x4",
     type: "equipment",
     title:
       "Peças leves, sofisticadas e feitas para brilhar junto com você.",
-      image: "3.jpg",
+      image: "/3.jpg",
   },
   {
     layout: "2x4",
     type: "equipment",
     title:
       "Um dos mix mais bonitos que eu já montei aqui.🥰",
-    images: ["4.jpg", "5.jpg"],
+    images: ["/4.jpg", "/5.jpg"],
   },
 ];
 
@@ -112,9 +112,9 @@ export const siteConfig = {
   creator: "TALATAY",
   title: "Semijoias",
   bio: "Evidencie a sua elegância com nossas semijoias ✨",
-  location: "São José Rio Preto - SP",
+  location: "Envio para todo Brasil",
+  timeweek: "Atendimento exclusivo em São José do Rio Preto, SP",
   locationLink:
     "https://www.google.com/maps/place/São+José+do+Rio+Preto+-+SP/data=!4m2!3m1!1s0x94bc52ce6910005f:0xb39d5c0e3b8c5675?sa=X&ved=1t:242&ictx=111",
-  email: "maurobrumato@gmail.com",
   items: GridItems,
 } as const;
