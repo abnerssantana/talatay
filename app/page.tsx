@@ -1,11 +1,13 @@
 import Footer from "@/components/footer";
 import LeftPanel from "@/components/left-panel";
 import RightPanel from "@/components/right-panel";
+import PatternBackground from "@/components/PatternBackground";
 
 export default function Home() {
   return (
     <main className="relative flex flex-col items-center flex-1 w-full h-full bg-background-light dark:bg-background-dark">
-      <div className="container relative z-20 flex flex-col w-full h-full px-6 gap:6 xl:gap-10 xl:flex-row">
+      <PatternBackground />
+      <div className="container relative z-20 flex flex-col w-full h-full px-3 gap:6 xl:gap-10 xl:flex-row">
         {/* Left Panel */}
         <LeftPanel />
         {/* Right Panel */}
