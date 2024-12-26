@@ -6,6 +6,7 @@ import Mentor from "./grid-items/mentor";
 import Project from "./grid-items/project";
 import Social from "./grid-items/social";
 
+
 const RightPanel = () => {
   return (
     <div className="grid w-full grid-cols-4 xl:gap-4 gap-3 xl:py-6 py-4 xl:px-1 xl:overflow-y-auto auto-rows-[76px]">
