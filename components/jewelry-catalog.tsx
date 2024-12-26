@@ -15,7 +15,7 @@ const JewelryCatalog = () => {
       id: 1,
       name: "Colar Veneziano Folheado",
       price: "R$ 89,90",
-      image: "/api/placeholder/400/400",
+      image: "/joias/brinco.jpg",
       category: "Colares"
     },
     {

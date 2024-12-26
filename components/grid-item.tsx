@@ -12,10 +12,11 @@ const variants = cva(
       size: {
         "1x2": "md:col-span-1 col-span-2 row-span-2 md:p-8 p-4",
         "1x6": "md:col-span-1 col-span-2 row-span-6 relative overflow-hidden",
-        "2x1": "md:col-span-2 col-span-full p-6",
+        "2x1": "md:col-span-2 col-span-full row-auto pt-[17px] px-6 pb-[60px]",
         "2x2": "md:col-span-2 col-span-full row-span-2 md:p-8 p-4",
         "2x4": "md:col-span-2 col-span-full row-span-4 relative overflow-hidden",
-        "2x7": "md:col-span-2 col-span-full row-span-7 relative overflow-hidden",
+        "2x6": "md:col-span-2 col-span-full row-span-6 relative overflow-hidden",
+        "2x8": "md:col-span-2 col-span-full row-span-8 relative overflow-hidden",
       },
     },
     defaultVariants: {
@@ -49,7 +50,7 @@ const GridItem = ({ size, children, backgroundColor }: GridItemProps) => {
 
   const bgColor = backgroundColor
     ? (isDark ? backgroundColor.dark : backgroundColor.light)
-    : (isDark ? "#7F5539" : "#DDB892");
+    : (isDark ? "#9f86c0" : "#F4D9DD");
 
   return (
     <div
