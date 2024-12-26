@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useMemo } from 'react';
 import { Search, Filter } from 'lucide-react';
 import Image from 'next/image';
@@ -14,21 +12,18 @@ const JewelryCatalog = () => {
     {
       id: 1,
       name: "Colar Veneziano Folheado",
-      price: "R$ 89,90",
       image: "/joias/brinco.jpg",
       category: "Colares"
     },
     {
       id: 2,
       name: "Brinco Gota Cristal",
-      price: "R$ 59,90",
       image: "/api/placeholder/400/400",
       category: "Brincos"
     },
     {
       id: 3,
       name: "Anel Solitário",
-      price: "R$ 79,90",
       image: "/api/placeholder/400/400",
       category: "Anéis"
     }
@@ -49,7 +44,6 @@ const JewelryCatalog = () => {
 
   return (
     <div className="flex-1 py-6 xl:py-10">
-      {/* Search and Filter Bar */}
       <div className="flex flex-col gap-4 mb-8">
         <div className="flex items-center justify-between p-4 bg-white dark:bg-neutral-900 rounded-xl">
           <div className="relative flex-1 max-w-sm">
@@ -71,7 +65,6 @@ const JewelryCatalog = () => {
           </button>
         </div>
 
-        {/* Category Filters */}
         {showFilters && (
           <div className="p-4 bg-white dark:bg-neutral-900 rounded-xl">
             <div className="flex flex-wrap gap-2">
@@ -103,7 +96,6 @@ const JewelryCatalog = () => {
         )}
       </div>
 
-      {/* Product Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredProducts.map((product) => (
           <div key={product.id} className="bg-white dark:bg-neutral-900 rounded-xl overflow-hidden hover:scale-[1.02] transition-transform">
@@ -118,8 +110,7 @@ const JewelryCatalog = () => {
               </div>
               <div className="p-4">
                 <div className="text-xs text-neutral-500 mb-1">{product.category}</div>
-                <h3 className="font-medium mb-2">{product.name}</h3>
-                <div className="text-lg font-semibold text-primary">{product.price}</div>
+                <h3 className="font-medium">{product.name}</h3>
               </div>
             </Link>
           </div>

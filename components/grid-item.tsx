@@ -27,6 +27,7 @@ const variants = cva(
 
 export type GridItemProps = {
   children: React.ReactNode;
+  index?: number;
   backgroundColor?: {
     light: string;
     dark: string;

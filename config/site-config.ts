@@ -1,4 +1,4 @@
-export type GridItemLayout = "1x2" | "1x6" | "2x1" | "2x2" | "2x4" | "2x7";
+export type GridItemLayout = "1x2" | "1x6" | "2x1" | "2x2" | "2x4" | "2x6" | "2x8";
 export type GridItemType = "social" | "equipment" | "mentor" | "project";
 export type EqiupmentItem = {
   title: string;
@@ -46,30 +46,6 @@ const GridItems: GridItemInterface[] = [
     buttonSecondaryText: "",
   },
   {
-    layout: "1x6",
-    type: "equipment",
-    title:
-      "Nossa nova coleção está cheia de braceletes e anéis incríveis.",
-    image: "/2.jpg",
-  },
-  {
-    layout: "1x6",
-    type: "equipment",
-    title: " Explore nossas semijoias e encontre seu novo favorito!",
-    video: "/1.mp4",
-  },
-  {
-    layout: "2x1",
-    type: "project",
-    title: "Joias em Prata 925",
-    icon: "gem",
-    color: "#090707",
-    backgroundColor: {
-      light: "#e6f3ff",
-      dark: "#0d2847",
-    },
-  },
-  {
     layout: "2x2",
     type: "social",
     title: "Instagram",
@@ -84,28 +60,7 @@ const GridItems: GridItemInterface[] = [
       light: "#f7e3fc",
       dark: "#2e1437",
     },
-  },
-  {
-    layout: "2x4",
-    type: "equipment",
-    title:
-      "Corações que encantam e completam qualquer look ❤️✨",
-      image: "/1.jpg",
-  },
-  {
-    layout: "2x4",
-    type: "equipment",
-    title:
-      "Peças leves, sofisticadas e feitas para brilhar junto com você.",
-      image: "/3.jpg",
-  },
-  {
-    layout: "2x4",
-    type: "equipment",
-    title:
-      "Um dos mix mais bonitos que eu já montei aqui.🥰",
-    images: ["/4.jpg", "/5.jpg"],
-  },
+  }
 ];
 
 export const siteConfig = {
