@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useMemo } from 'react';
 import { Search, Filter } from 'lucide-react';
 import Image from 'next/image';
@@ -18,13 +19,13 @@ const JewelryCatalog = () => {
     {
       id: 2,
       name: "Brinco Gota Cristal",
-      image: "/api/placeholder/400/400",
+      image: "/joias/brinco2.jpg",
       category: "Brincos"
     },
     {
       id: 3,
       name: "Anel Solitário",
-      image: "/api/placeholder/400/400",
+      image: "/joias/coracao.jpg",
       category: "Anéis"
     }
   ];
@@ -45,7 +46,7 @@ const JewelryCatalog = () => {
   return (
     <div className="flex-1 py-6 xl:py-10">
       <div className="flex flex-col gap-4 mb-8">
-        <div className="flex items-center justify-between p-4 bg-white dark:bg-neutral-900 rounded-xl">
+        <div className="flex items-center justify-between p-4 backdrop-blur-sm bg-white/60 dark:bg-neutral-950/60 rounded-xl">
           <div className="relative flex-1 max-w-sm">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400" size={18} />
             <input 
