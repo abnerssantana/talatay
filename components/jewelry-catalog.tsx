@@ -32,7 +32,7 @@ const JewelryCatalog = () => {
       id: 4,
       name: "Corrente Cruz Cravejada",
       image: "/joias/cruz.jpg",
-      category: "Corrente"
+      category: "Colares"
     }
   ];
 
