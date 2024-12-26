@@ -51,7 +51,7 @@ const GridItems: GridItemInterface[] = [
     title: "Instagram",
     icon: "instagram",
     description:
-      "Acompanhe meu trabalho no Instagram para ver mais projetos e atualizações.",
+      "Acompanhe os últimos lançamentos e combinações no Instagram.",
     buttonTitle: "Seguidores",
     buttonLink: "https://www.instagram.com/usetalatay/",
     buttonSecondaryText: "909",

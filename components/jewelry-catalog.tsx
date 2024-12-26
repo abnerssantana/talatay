@@ -27,6 +27,12 @@ const JewelryCatalog = () => {
       name: "Anel Solitário",
       image: "/joias/coracao.jpg",
       category: "Anéis"
+    },
+    {
+      id: 4,
+      name: "Corrente Cruz Cravejada",
+      image: "/joias/cruz.jpg",
+      category: "Corrente"
     }
   ];
 
@@ -45,8 +51,9 @@ const JewelryCatalog = () => {
 
   return (
     <div className="flex-1 py-6 xl:py-10">
+      {/* Search and Filter Section */}
       <div className="flex flex-col gap-4 mb-8">
-        <div className="flex items-center justify-between p-4 backdrop-blur-sm bg-white/60 dark:bg-neutral-950/60 rounded-xl">
+        <div className="flex items-center justify-between p-4 backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70 rounded-xl">
           <div className="relative flex-1 max-w-sm">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-neutral-400" size={18} />
             <input 
@@ -59,21 +66,22 @@ const JewelryCatalog = () => {
           </div>
           <button 
             onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-2 px-4 py-2 bg-surface-light dark:bg-surface-dark rounded-lg"
+            className="flex items-center gap-2 px-4 py-2 bg-surface-light dark:bg-surface-dark text-white rounded-lg"
           >
             <Filter size={18} />
             <span>Filtrar</span>
           </button>
         </div>
 
+        {/* Filter Categories */}
         {showFilters && (
-          <div className="p-4 bg-white dark:bg-neutral-900 rounded-xl">
+          <div className="p-4 backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70 rounded-xl">
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setSelectedCategory('')}
                 className={`px-4 py-2 rounded-lg ${
                   selectedCategory === '' 
-                    ? 'bg-primary text-white' 
+                    ? 'bg-surface-light dark:bg-surface-dark text-white' 
                     : 'bg-neutral-100 dark:bg-neutral-800'
                 }`}
               >
@@ -85,7 +93,7 @@ const JewelryCatalog = () => {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-2 rounded-lg ${
                     selectedCategory === category 
-                      ? 'bg-primary text-white' 
+                      ? 'bg-surface-light dark:bg-surface-dark text-white' 
                       : 'bg-neutral-100 dark:bg-neutral-800'
                   }`}
                 >
@@ -97,20 +105,25 @@ const JewelryCatalog = () => {
         )}
       </div>
 
+      {/* Product Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="backdrop-blur-sm bg-white/60 dark:bg-neutral-950/60 rounded-xl overflow-hidden hover:scale-[1.02] transition-transform">
+          <div 
+            key={product.id} 
+            className="backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70 rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
+          >
             <Link href={`/produto/${product.id}`}>
-              <div className="relative aspect-square">
+              <div className="relative w-full pt-[177.78%]">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-4">
-                <div className="text-xs text-neutral-500 mb-1">{product.category}</div>
+                <div className="text-xs text-surface-light mb-1">{product.category}</div>
                 <h3 className="font-medium">{product.name}</h3>
               </div>
             </Link>

@@ -1,7 +1,7 @@
 "use client";
 
 import { siteConfig } from "@/config/site-config";
-import { Mail, MapPin, CalendarRange } from "lucide-react";
+import { MapPin, CalendarRange } from "lucide-react";
 import Image from "next/image";
 import Footer from "./footer";
 
