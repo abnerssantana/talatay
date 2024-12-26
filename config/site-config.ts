@@ -56,7 +56,7 @@ const GridItems: GridItemInterface[] = [
       "Acompanhe os últimos lançamentos e combinações no Instagram.",
     buttonTitle: "Seguidores",
     buttonLink: "https://www.instagram.com/usetalatay/",
-    buttonSecondaryText: "909",
+    buttonSecondaryText: "956",
     color: "rgb(109 40 217 / var(--tw-bg-opacity, 1))",
     colorDark: "#6D67E4",
     backgroundColor: {

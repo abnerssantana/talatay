@@ -9,30 +9,27 @@ const JewelryCatalog = () => {
   const [showFilters, setShowFilters] = useState(false);
 
   const products = [
-    {
-      id: 1,
-      name: "Colar Veneziano Folheado",
-      image: "/joias/brinco.jpg",
-      category: "Colares"
-    },
-    {
-      id: 2,
-      name: "Brinco Gota Cristal",
-      image: "/joias/brinco2.jpg",
-      category: "Brincos"
-    },
-    {
-      id: 3,
-      name: "Anel Solitário",
-      image: "/joias/coracao.jpg",
-      category: "Anéis"
-    },
-    {
-      id: 4,
-      name: "Corrente Cruz Cravejada",
-      image: "/joias/cruz.jpg",
-      category: "Colares"
-    }
+    { id: 1, name: "Anel Elegante", image: "/joias/anel.jpg", category: "Anéis" },
+    { id: 2, name: "Bracelete Dourado", image: "/joias/bracelete.jpg", category: "Pulseiras" },
+    { id: 3, name: "Brinco Clássico", image: "/joias/brinco.jpg", category: "Brincos" },
+    { id: 4, name: "Brinco Cristal", image: "/joias/brinco2.jpg", category: "Brincos" },
+    { id: 5, name: "Brinco Gota", image: "/joias/brinco3.PNG", category: "Brincos" },
+    { id: 6, name: "Brinco Pérola", image: "/joias/brinco4.jpg", category: "Brincos" },
+    { id: 7, name: "Brinco Dourado", image: "/joias/brinco5.PNG", category: "Brincos" },
+    { id: 8, name: "Brinco Delicado", image: "/joias/brinco6.jpg", category: "Brincos" },
+    { id: 9, name: "Brinco Argola", image: "/joias/brinco7.jpg", category: "Brincos" },
+    { id: 10, name: "Brinco Pedra", image: "/joias/brinco8.jpg", category: "Brincos" },
+    { id: 11, name: "Brinco Festa", image: "/joias/brinco9.jpg", category: "Brincos" },
+    { id: 12, name: "Brinco Luxo", image: "/joias/brinco10.jpg", category: "Brincos" },
+    { id: 13, name: "Brinco Noite", image: "/joias/brinco11.jpg", category: "Brincos" },
+    { id: 14, name: "Brinco Casual", image: "/joias/brinco13.jpg", category: "Brincos" },
+    { id: 15, name: "Brinco Premium", image: "/joias/brinco14.jpg", category: "Brincos" },
+    { id: 16, name: "Brinco Especial", image: "/joias/brinco15.jpg", category: "Brincos" },
+    { id: 17, name: "Colar Nome", image: "/joias/colar-nome.jpg", category: "Colares" },
+    { id: 18, name: "Colar Coração", image: "/joias/coracao.jpg", category: "Colares" },
+    { id: 19, name: "Colar Cruz", image: "/joias/cruz.jpg", category: "Colares" },
+    { id: 20, name: "Kit Completo 1", image: "/joias/kit.jpg", category: "Kits" },
+    { id: 21, name: "Kit Completo 2", image: "/joias/kit2.jpg", category: "Kits" }
   ];
 
   const categories = useMemo(() => 
@@ -64,7 +61,7 @@ const JewelryCatalog = () => {
           </div>
           <button 
             onClick={() => setShowFilters(!showFilters)}
-            className="flex items-center gap-2 px-4 py-2 bg-surface-light dark:bg-surface-dark text-white rounded-lg"
+            className="ml-3 flex items-center gap-2 px-4 py-2 bg-surface-light dark:bg-surface-dark text-white rounded-lg"
           >
             <Filter size={18} />
             <span>Filtrar</span>
