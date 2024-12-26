@@ -2,7 +2,6 @@
 
 import { siteConfig } from "@/config/site-config";
 import { MapPin, CalendarRange } from "lucide-react";
-import Image from "next/image";
 import Footer from "./footer";
 
 const LeftPanel = () => {
@@ -13,26 +12,15 @@ const LeftPanel = () => {
     >
       {/* Top Container */}
       <div>
-        <div>
-          <Image
-            alt="Talatay"
-            placeholder="blur"
-            src="/avatar.jpg"
-            width={160}
-            height={160}
-            blurDataURL="/avatar.jpg"
-            className="rounded-full"
-          />
-        </div>
         {/* Text Container with Glassmorphism */}
-        <div className="relative my-6 p-6 rounded-xl overflow-hidden">
+        <div className="relative my-4 p-6 rounded-xl overflow-hidden">
           {/* Glassmorphism Background */}
-          <div className="absolute inset-0 backdrop-blur-sm bg-white/30 dark:bg-neutral-950/30" />
+          <div className="absolute inset-0 backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70" />
           {/* Gradient Border */}
           <div className="absolute inset-0 rounded-xl border border-white/20 dark:border-neutral-800/20" />
           {/* Content */}
           <div className="relative">
-            <div className="text-base font-medium text-primary">
+            <div className="text-base font-medium text-primary text-surface-light">
               {siteConfig.title}
             </div>
             <h1 className="mt-2 text-4xl font-bold">{siteConfig.creator}</h1>

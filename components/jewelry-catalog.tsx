@@ -2,7 +2,6 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Filter } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const JewelryCatalog = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -51,7 +50,6 @@ const JewelryCatalog = () => {
 
   return (
     <div className="flex-1 py-6 xl:py-10">
-      {/* Search and Filter Section */}
       <div className="flex flex-col gap-4 mb-8">
         <div className="flex items-center justify-between p-4 backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70 rounded-xl">
           <div className="relative flex-1 max-w-sm">
@@ -73,7 +71,6 @@ const JewelryCatalog = () => {
           </button>
         </div>
 
-        {/* Filter Categories */}
         {showFilters && (
           <div className="p-4 backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70 rounded-xl">
             <div className="flex flex-wrap gap-2">
@@ -105,28 +102,25 @@ const JewelryCatalog = () => {
         )}
       </div>
 
-      {/* Product Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredProducts.map((product) => (
           <div 
             key={product.id} 
             className="backdrop-blur-sm bg-white/70 dark:bg-neutral-950/70 rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300"
           >
-            <Link href={`/produto/${product.id}`}>
-              <div className="relative w-full pt-[177.78%]">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <div className="p-4">
-                <div className="text-xs text-surface-light mb-1">{product.category}</div>
-                <h3 className="font-medium">{product.name}</h3>
-              </div>
-            </Link>
+            <div className="relative w-full pt-[177.78%]">
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            <div className="p-4">
+              <div className="text-xs text-surface-light mb-1">{product.category}</div>
+              <h3 className="font-medium">{product.name}</h3>
+            </div>
           </div>
         ))}
       </div>

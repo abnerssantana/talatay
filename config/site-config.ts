@@ -11,6 +11,7 @@ export interface GridItemInterface {
   icon?: string;
   description?: string;
   color?: string;
+  colorDark?: string;
   backgroundColor?: {
     light: string;
     dark: string;
@@ -26,6 +27,7 @@ export interface GridItemInterface {
   image?: string;
   images?: string[];
   video?: string;
+  username?: string;
 }
 
 const GridItems: GridItemInterface[] = [
@@ -55,10 +57,11 @@ const GridItems: GridItemInterface[] = [
     buttonTitle: "Seguidores",
     buttonLink: "https://www.instagram.com/usetalatay/",
     buttonSecondaryText: "909",
-    color: "rgba(104, 60, 190, 1)",
+    color: "rgb(109 40 217 / var(--tw-bg-opacity, 1))",
+    colorDark: "#6D67E4",
     backgroundColor: {
-      light: "#f7e3fc",
-      dark: "#2e1437",
+      light: "rgb(237 233 254 / var(--tw-bg-opacity, 1))",
+      dark: "#392467",
     },
   }
 ];
